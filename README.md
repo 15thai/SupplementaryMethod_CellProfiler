@@ -9,7 +9,7 @@ Python codes to extract the feature data automatically if not familiar with MySQ
 Original dataset could be downloaded at https://data.broadinstitute.org/bbbc/BBBC025/,
 Running the pipeline to extract the feature measurement:
 -	Pipeline was tested on CellProfiler V2.1.1 (window 64-bits), downloaded at: https://cellprofiler.org/releases/.
--	Folder name of images are separated as “#_name” such as “38034_ERSyto”. The prediction should follow the same structure. 
+-	Folder name of images are separated as “#_name” such as “38034_ERSyto”. The predicted/original images should follow the same structure. 
 
 
 ### Prerequisites

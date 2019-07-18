@@ -1,3 +1,6 @@
+__author__ = "Anh Thai"
+__email__ = "15thai@cua.edu"
+
 import os
 import numpy as np
 import pandas as pd

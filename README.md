@@ -61,7 +61,7 @@ python Pearson_corr_distribution.py .\U2OS_CPA_FM_5_OriginalChannel_Final .\U2OS
 
 ## Acknowledgments
 
-* This is the modified version from original pipeline found at [1]
+* CellProfiler pipeline is the modified version from original pipeline found at [1]
 
 ## Supplementary References
 [1] S. Singh, X. Wu, V. Ljosa, M. Bray, F. Piccioni, D. E. Root, J. G. Doench, J. S. Boehm, and A. E. Carpenter. "Morphological profiles of RNAi-induced gene knockdown are highly reproducible but dominated by seed effects." PLoS One 10, no. 7 (2015)

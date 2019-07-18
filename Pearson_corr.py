@@ -1,5 +1,5 @@
-__author__ = "Thanh Nguyen"
-__email__ = "32nguyen@cua.edu"
+__author__ = "Vy Bui"
+__email__ = "01bui@cua.edu"
 
 import numpy as np
 import pandas as pd

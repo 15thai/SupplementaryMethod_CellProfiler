@@ -34,19 +34,19 @@ Feature Measurement:
 -	Click on “Analyze Images”, wait until it finishes.
 -	Do similarly for both 5 original channel images and 2 input + 3 prediction images to create raw feature measurement storage in “U2OS_CPA_FM_5_OriginalChannel” and “U2OS_CPA_FM_2_and_3_Predict”, respectively. In each case, update the output setting according to both output folders. 
 -	In each folders, remove all folders/files (boundary segmented images + *Experiment.csv) except the folders with name started with “Image”
--	Run **“auto_extract.py”** point to the location of the output folder to produce summary excel files with correct directory.
+-	Run **“FM_extract.py”** point to the location of the output folder to produce summary excel files with correct directory.
 
 ```
-python auto_extract.py .\U2OS_CPA_FM_5_OriginalChannel .\U2OS_CPA_FM_5_OriginalChannel_Final
-python auto_extract.py .\ U2OS_CPA_FM_2_and_3_Predict  .\U2OS_CPA_FM_2_and_3_Predict _Final
+python FM_extract.py .\U2OS_CPA_FM_5_OriginalChannel .\U2OS_CPA_FM_5_OriginalChannel_Final
+python FM_extract.py .\ U2OS_CPA_FM_2_and_3_Predict  .\U2OS_CPA_FM_2_and_3_Predict _Final
 ```
--	Run **“correlation_score.py”** to product Pearson correction checkerboard.
+-	Run **“Pearson_corr.py”** to product Pearson correction checkerboard.
 ```
-
+python Pearson_corr.py .\U2OS_CPA_FM_5_OriginalChannel_Final .\U2OS_CPA_FM_2_and_3_Predict_Final
 ```
--	Run **“correlation_score_distribute.py”** to product Pearson correction checkerboard distributed in Cell, Nuclei, Cytoplasm.
+-	Run **“Pearson_corr_distribution.py”** to product Pearson correction checkerboard distributed in Cell, Nuclei, Cytoplasm.
 ```
-
+python Pearson_corr_distribution.py .\U2OS_CPA_FM_5_OriginalChannel_Final .\U2OS_CPA_FM_2_and_3_Predict_Final
 ```
 
 ## Built With

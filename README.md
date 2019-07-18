@@ -57,7 +57,7 @@ python Pearson_corr_distribution.py .\U2OS_CPA_FM_5_OriginalChannel_Final .\U2OS
 
 * **Thanh Nguyen** - *Initial work* - [GitHub](https://github.com/32nguyen)
 * **Vy Bui** - *Initial work* - [GitHub](https://github.com/01bui)
-* **Anh Thai** - *Initial work* - [GitHub]()
+* **Anh Thai** - *Initial work* - [GitHub](https://github.com/15thai)
 
 ## Acknowledgments
 

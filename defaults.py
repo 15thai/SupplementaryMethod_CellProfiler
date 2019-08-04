@@ -6,10 +6,7 @@ import numpy as np
 import pandas as pd
 import glob
 
-#working_dir = "D:\\100_protein_report\output_anh_a01_predict_test\\thanh_folder2_38034_a01_s1"
-#prefix_folder_name = "thanh_folder2_38034"
-#prefix_file_name = "MyExp_next_group"
-#number_of_files = 100
+
 prefix_csv_name = "MyExpt_next_group"
 object_list = ['Cells.csv','Nuclei.csv','Cytoplasm.csv', 'Image.csv']
 measure_list = ["IdentifyPrimary",

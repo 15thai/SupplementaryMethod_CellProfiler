@@ -329,11 +329,6 @@ def main():
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    # Get the list of "a01_s1, a01_s2, ... a01_s9,... a03_s9.... Default 100 files
-    # ids_list = get_list_of_image_a_ids()
-
-    # Get all the folder that have matched IDs
-    # list_of_inputs = get_the_list_of_files_from_idList(ids_list, working_dir)
     list_of_inputs = get_list_of_valid_folder(working_dir)
     if len(list_of_inputs) > 0:
         for input_dir in list_of_inputs:
@@ -361,22 +356,28 @@ def get_list_of_valid_folder(folder):
 
 
 
-main()
+#main()
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         raise IOError ("Not enough inputs")
+    platform = sys.platform
+    if 'Windows' in platform:
+	split_ = "\\"
+    else:
+        split_ = "/"
 
-    WorkingDir = sys.argv[1]
+    WorkingDir = str(sys.argv[1])
     OutputDir = sys.argv[2]
     if not os.path.exists(OutputDir):
         os.makedirs(OutputDir)
 
-    ids_list = get_list_of_image_a_ids()
-    list_of_inputs = get_the_list_of_files_from_idList(ids_list, WorkingDir)
-
+    
+    list_of_inputs = get_list_of_valid_folder(working_dir)
     for input_dir in list_of_inputs:
-        output_fn = input_dir.split("\\")[-1]  + "_Auto"
+        output_fn = input_dir.split(split_)[-1]  + "_Auto"
+	print(output_fn)
+	break
         output_dir = os.path.join(OutputDir, output_fn)
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
